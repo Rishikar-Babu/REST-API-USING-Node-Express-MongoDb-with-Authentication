@@ -22,7 +22,7 @@ app.use('/api/users',userRoute)
 app.use(errorHandler)
 
 
- mongoose.connect('mongodb://0.0.0.0:27017/myprojectdatabase',{
+ mongoose.connect('your-mongodb-connection-string/Databasename',{
             useNewUrlParser:true,
             useUnifiedTopology:true
         }).then(()=>{console.log("connected to mongodb")})
